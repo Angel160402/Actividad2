@@ -12,12 +12,19 @@ public class Actividad2 {
         System.out.println("UNIVERSIDAD AUTÓNOMA DE CAMPECHE");
         System.out.println("FACULTAD DE INGENIERÍA");
         System.out.println("INGENIERÍA EN SISTEMAS COMPUTACIONALES");
-        System.out.println("----------------------------------------");
 
     }
 
     static void separador() {
         System.out.println("[-----------------------------------------------]");
+    }
+
+    static void acciones() {
+        System.out.println("1.----Correr----");
+        System.out.println("2.----Saltar----");
+        System.out.println("3.----Dormir----");
+        System.out.println("4.----Comer-----");
+        System.out.println("5.----Estudiar--");
     }
 
     static void menú() {
@@ -37,7 +44,7 @@ public class Actividad2 {
 
         encabezados();
         System.out.println(" ");
-        //1.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo int y se procese algún mensaje.   
+        /* //1.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo int y se procese algún mensaje.   
         int valor = 0;
 
         System.out.println("[----------EJERCICIO 1-------------]");
@@ -68,14 +75,40 @@ public class Actividad2 {
                 System.out.println("PRECIO: $999");
                 break;
         }
-
+         */
         separador();
         System.out.println(" ");
         //2.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo string 
         //(correr, saltar, dormir, comer, estudiar) y se proceso algun mensaje.
-        String opcion = "";
-
+        String opcion;
+        int accion = 0;
+        String run = "Correr";
+        String jump = "Saltar";
+        String sleep = "Dormir";
+        String eat = "Comer";
+        String study = "Estudiar";
         System.out.println("[----------EJERCICIO 2--------------]");
+        acciones();
+        System.out.println("Escriba una acción a realizar:");
+        opcion = teclado.next();
+
+        switch (opcion) {
+            case "Correr":
+                System.out.println("Usted eligio:" + run);
+                break;
+            case "Saltar":
+                System.out.println("Usted eligio:" + jump);
+                break;
+            case "Dormir":
+                System.out.println("Usted eligio:" + sleep);
+                break;
+            case "Comer":
+                System.out.println("Usted eligio:" + eat);
+                break;
+            case "Estudiar":
+                System.out.println("Usted eligio:" + study);
+                break;
+        }
 
     }
 
