@@ -47,19 +47,74 @@ public class Actividad2 {
         System.out.println("4.-----Zapatos / Flexi-----");
         System.out.println("5.-----Botas / Contempo-----");
     }
-    
-    public static void diasDeLaSemana() {
-        
+
+    public static void diasDeLaSemana(int dia, boolean tipoSemana) {
+
+        if (tipoSemana) {
+            //Semana Inglesa
+            switch (dia) {
+                case 1:
+                    System.out.println("Domingo");
+                    break;
+                case 2:
+                    System.out.println("Lunes");
+                    break;
+                case 3:
+                    System.out.println("Martes");
+                    break;
+                case 4:
+                    System.out.println("Miércoles");
+                    break;
+                case 5:
+                    System.out.println("Jueves");
+                    break;
+                case 6:
+                    System.out.println("Viernes");
+                    break;
+                case 7:
+                    System.out.println("Sábado");
+                    break;
+
+            }
+
+        } else{
+     
+                          //Semana Laborable
+        switch (dia) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+        }
+
+        }
+
     }
 
- 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-/*
+        /*
         encabezados();
         System.out.println(" ");
         //1.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo int y se procese algún mensaje.   
@@ -174,7 +229,7 @@ public class Actividad2 {
             default:
                 System.out.println("Clase");
         }
-        */
+         */
 
         separador();
         System.out.println(" ");
@@ -185,8 +240,8 @@ public class Actividad2 {
         System.out.println("[----------EJERCICIO 4-------------]");
         System.out.println("[----------DÍAS DE LA SEMANA-------------]");
         
+        diasDeLaSemana(1, false);
+   
     }
 
 }
-
-
