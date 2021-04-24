@@ -27,6 +27,19 @@ public class Actividad2 {
         System.out.println("5.----Estudiar--");
     }
 
+    static void horario() {
+        System.out.println("De 6:00am A 7:00am -> Despertar");
+        System.out.println("De 7:00am A 8:00am -> Administración General");
+        System.out.println("De 8:00am A 9:00am -> Descanso/Desayunar");
+        System.out.println("De 9:00am A 11:00am -> Algebra Lineal");
+        System.out.println("De 11:00am A 13:00pm -> Organización Computacional");
+        System.out.println("De 13:00pm A 14:00pm -> Descanso");
+        System.out.println("De 14:00pm A 16:00pm -> Física");
+        System.out.println("De 16:00pm A 19:00pm -> Descanso/Limpieza");
+        System.out.println("De 19:00pm A 21:00pm -> Lenguaje de Programación");
+        System.out.println("De 21:00pm A 24:00am -> Dormir");
+    }
+
     static void menú() {
         System.out.println("1.-----Sandaleas / Gucci-----");
         System.out.println("2.-----Tennis / Nike-----");
@@ -44,7 +57,7 @@ public class Actividad2 {
 
         encabezados();
         System.out.println(" ");
-        /* //1.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo int y se procese algún mensaje.   
+        //1.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo int y se procese algún mensaje.   
         int valor = 0;
 
         System.out.println("[----------EJERCICIO 1-------------]");
@@ -75,7 +88,7 @@ public class Actividad2 {
                 System.out.println("PRECIO: $999");
                 break;
         }
-         */
+         
         separador();
         System.out.println(" ");
         //2.- Crear un menú del 1 al 5 con opciones de acciones  se lea un valor de tipo string 
@@ -94,20 +107,68 @@ public class Actividad2 {
 
         switch (opcion) {
             case "Correr":
-                System.out.println("Usted eligio:" + run);
+                System.out.println("Usted eligio:" + " " + run);
                 break;
             case "Saltar":
-                System.out.println("Usted eligio:" + jump);
+                System.out.println("Usted eligio:" + " " + jump);
                 break;
             case "Dormir":
-                System.out.println("Usted eligio:" + sleep);
+                System.out.println("Usted eligio:" + " " + sleep);
                 break;
             case "Comer":
-                System.out.println("Usted eligio:" + eat);
+                System.out.println("Usted eligio:" + " " + eat);
                 break;
             case "Estudiar":
-                System.out.println("Usted eligio:" + study);
+                System.out.println("Usted eligio:" + " " + study);
                 break;
+        }
+
+        separador();
+        System.out.println(" ");
+        /*3.- Crear un horario de usted de cualquier día de la semana, ej: 6 Despertar, 7 Clase LP1, 8 Clase LP1, 9 Clase Estructuras, 10 …,
+         21 Dormir, leer un valor de 1  al 24 validar e imprimir la acción que realiza en su horario.*/
+        System.out.println("[----------EJERCICIO 3-------------]");
+        System.out.println("[-----------HORARIO DEL DÍA JUEVES---------------]");
+        int val1 = 0;
+        horario();
+        System.out.println("Escoja una hora de 1 a 24 en el horario:");
+        System.out.println("¿QUÉ TENGO QUE HACER EN ESA HORA?");
+        val1 = teclado.nextInt();
+
+        switch (val1) {
+            
+            case 6:
+                System.out.println("Despertar");
+                break;
+            case 7:
+                System.out.println("Clse de Adiministración General");
+                break;
+            case 8:
+                System.out.println("Descanso/Desayuno");
+                break;
+            case 9:
+                System.out.println("Clase de Algebra Lineal");
+                break;
+            case 11:
+                System.out.println("Clase de Organización Computacioal");
+                break;
+            case 13:
+                System.out.println("Descanso");
+                break;
+            case 14:
+                System.out.println("Clase de Física");
+                break;
+            case 16:
+                System.out.println("Descanso/Limpieza");
+                break;
+            case 19:
+                System.out.println("Clase de Lenguaje de Programación");
+              break;
+            case 21:
+                System.out.println("Dormir");
+                default:
+                    System.out.println("Clase");
+
         }
 
     }
